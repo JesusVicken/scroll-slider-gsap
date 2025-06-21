@@ -138,7 +138,7 @@
                         trigger: ".wrapper",
                         pin: true,
                         scrub: true,
-                        end: "+=" + ((totalWidth - window.innerWidth) + window.innerWidth * 0.3), // Finaliza 30vw antes
+                        end: "+=" + ((totalWidth - window.innerWidth) * 3 + window.innerWidth * 0.3), // <-- Aumentado para tornar mais LENTO
                         onUpdate: self => {
                             panData.forEach(data => {
                                 if (data.overflowX > 0) {
