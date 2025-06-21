@@ -47,7 +47,7 @@
             height: 100%;
             width: auto;
             min-width: 130%;
-            /* Garante overflow para todas as imagens */
+            /* Garantindo o overflow para todas as img */
             user-select: none;
             pointer-events: none;
             will-change: transform;
@@ -138,7 +138,7 @@
                         trigger: ".wrapper",
                         pin: true,
                         scrub: true,
-                        end: "+=" + ((totalWidth - window.innerWidth) * 3 + window.innerWidth * 0.3), // <-- Aumentado para tornar mais LENTO
+                        end: "+=" + ((totalWidth - window.innerWidth) * 3 + window.innerWidth * 0.3), 
                         onUpdate: self => {
                             panData.forEach(data => {
                                 if (data.overflowX > 0) {
